@@ -3,5 +3,5 @@ cache: packages
 sudo: false
 r_github_packages:
   - jimhester/lintr
-after_success:
+script:
   - Rscript -e 'lintr::lint_package()'
